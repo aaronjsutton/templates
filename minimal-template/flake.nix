@@ -17,7 +17,7 @@
   in {
   devShells = forAllSystems (pkgs: {
     default = pkgs.mkShell {
-      packages = with pkgs; [
+      buildInputs = with pkgs; [
         # Add your packages.
       ];
     };
